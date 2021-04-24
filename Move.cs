@@ -17,7 +17,7 @@ public class Move : MonoBehaviour
     void Update()
     {
         ThisTransform.position += speed * ThisTransform.forward * Time.deltaTime;
-        float y = curve.Evaluate(Mathf.PingPong(Time.time,a 1f));
+        float y = curve.Evaluate(Mathf.PingPong(Time.time, 1f));
         ThisTransform.position = new Vector3(ThisTransform.position.x, y, ThisTransform.position.z);
 
     }
